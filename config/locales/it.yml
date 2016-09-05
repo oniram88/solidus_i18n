@@ -575,6 +575,7 @@ it:
     add_state: Aggiungi Stato/Provincia
     add_stock: Aggiungi Scorte
     add_stock_management: Gestione Scorte
+    add_taxon: Aggiungi elemento
     add_to_cart: Aggiungi al Carrello
     add_variant: Aggiungi Variante
     additional_item: Costo Aggiuntivo Articolo
@@ -583,22 +584,29 @@ it:
     adjustable: Variabile
     adjustment: Variazione
     adjustment_amount: Importo
+    adjustment_labels:
+      tax_rates:
+        sales_tax_with_rate: tasse
+        vat_with_rate: di cui tasse
     adjustment_successfully_closed: La variazione è stata chiusa correttamente
     adjustment_successfully_opened: La variazione è stata aperta correttamente
     adjustment_total: Totale Variazione
     adjustments: Variazioni
     admin:
       tab:
+        areas: Zone
         configuration: Impostazioni
         option_types: Opzioni
         orders: Ordini
         overview: Quadro generale
         products: Prodotti
-        promotion_categories:
+        promotion_categories: Categorie di promozione
         promotions: Promozioni
         properties: Proprietà
         prototypes: Prototipi
         reports: Report
+        rma: Rma
+        taxes: Tasse
         taxonomies: Tassonomie
         taxons: Taxon
         users: Utenti
@@ -608,6 +616,8 @@ it:
         settings: Impostazioni
         shipping: Spedizione
         stock: Stock
+        stock_items: Magazzino
+        stock_transfers: Trasferimento di magazzino
       user:
         account: Account
         addresses: Indirizzi
@@ -617,6 +627,18 @@ it:
         order_num: 'Ordine #'
         orders: Ordini
         user_information: Informazioni Utente
+        store_credit: Credito
+      prices:
+        any_country: Tutte le nazioni
+        index:
+          amount_less_than: Quantità minore di
+          amount_greater_than: Quantità maggiore di
+          new_price: Nuovo prezzo
+      store_credits:
+        add: Nuovo credito
+        back_to_user_list: Lista utenti
+        select_reason: Motivo
+    admin_login: Login
     administration: Amministrazione
     advertise: Promuovi
     agree_to_privacy_policy: Accetta Politica di Privacy
@@ -663,13 +685,28 @@ it:
     avs_response: Risposta AVS
     back: Indietro
     back_end: Backend
+    back_to_adjustment_reason_list: Lista motivi di modifica
+    back_to_countries_list: Lista nazioni
+    back_to_orders_list: Lista ordini
     back_to_payment: Torna al Pagamento
+    back_to_products_list: Lista prodotti
+    back_to_reports_list: Lista reports
     back_to_resource_list: Torna alla Lista %{resource}
     back_to_rma_reason_list: Torna alla Lista Motivazioni RMA
+    back_to_shipping_categories: Lista categorie di spedizione
+    back_to_shipping_methods_list: Lista metodi di spedizione
+    back_to_states_list: Lista stati
+    back_to_stock_locations_list: Lista aliquote
+    back_to_stock_transfers_list: Lista trasferimenti di magazzino
     back_to_store: Torna al Negozio
+    back_to_tax_categories_list: Lista categorie di tassazione
+    back_to_tax_rates_list: Lista aliquote
+    back_to_taxonomies_list: Lista tassonomie
     back_to_users_list: Torna alla Lista degli Utenti
+    back_to_zones_list: Lista zone
     backorderable: Ordinabile anche se terminato
     backorderable_default: Ordinabile di default
+    backorderable_header: Approvvigionamento
     backordered: Arretrato
     backorders_allowed: consentiti ordini anche se terminato
     balance_due: Saldo Dovuto
@@ -683,6 +720,7 @@ it:
     calculator: Calcolatore
     calculator_settings_warning: Se stai cambiando la tipologia di calcolatore, devi prima salvare per modificare le impostazioni del calcolatore
     cancel: annulla
+    cancel_inventory: Annulla movimento
     canceled_at: Annullato il
     canceler: Annullatore
     cannot_create_customer_returns: Impossibile Create Resi Cliente
@@ -756,6 +794,7 @@ it:
     create: Crea
     create_a_new_account: Crea un nuovo account
     create_new_order: Crea Nuovo Ordine
+    create_one: Creane una
     create_reimbursement: Crea Rimborso
     created_at: Creato Il
     credit: Credito
@@ -814,9 +853,17 @@ it:
     display_currency: Mostra valuta
     doesnt_track_inventory: Non tiene traccia dell'inventario
     edit: Modifica
+    editing_country: Modifica nazione
     editing_resource: Modifica %{resource}
     editing_rma_reason: Modifica Motivazione RMA
+    editing_shipping_method: Modifica metodo di spedizione
+    editing_shipping_category: Modifica categoria di spedizione
+    editing_state: Modifica stati
+    editing_stock_location: Modifica magazzino
+    editing_tax_category: Modifica catgoria di tassazione
+    editing_tax_rate: Modifica aliquota
     editing_user: Modifica Utente
+    editing_zone: Modifica zona
     eligibility_errors:
       messages:
         has_excluded_product: Il carrello contiene un prodotto che non permette l'applicazione di questo codice coupon.
@@ -876,6 +923,7 @@ it:
     filter: Filtro
     filter_results: Filtra Risultati
     finalize: Concludi
+    finalize_all_adjustments: Conferma la registrazione
     finalized: Concluso
     find_a_taxon: Cerca un Taxon
     first_item: Costo primo articolo
@@ -967,6 +1015,12 @@ it:
     lifetime_stats: Statistiche Totali
     line_item_adjustments: Variazioni della riga d'ordine
     list: Lista
+    listing_countries: Elenco nazioni
+    listing_orders: Elenco ordini
+    listing_products: Elenco prodotti
+    listing_reports: Elenco reports
+    listing_tax_categories: Elenco categorie di tassazione
+    listing_users: Elenco utenti
     loading: Caricamento
     locale_changed: Lingua cambiata
     location: Luogo
@@ -985,6 +1039,7 @@ it:
     make_refund: Esegui rimborso
     make_sure_the_above_reimbursement_amount_is_correct: Assicurati che l'importo di rimborso qui sopra sia corretto
     manage_promotion_categories: Gestisci Categorie di Promozione
+    manage_stock: Gestisci magazzino
     manage_variants: Gestisci le Varianti
     manual_intervention_required: È richiesto un'intervento manuale
     master_price: Prezzo principale
@@ -1009,6 +1064,7 @@ it:
     name_or_sku: Nome o SKU (inserisci almeno i primi 4 caratteri del nome del prodotto)
     new: Nuovo
     new_adjustment: Nuova Variazione
+    new_adjustment_reason: Nuovo motivo di modifica
     new_country: Nuova Nazione
     new_customer: Nuovo Cliente
     new_customer_return: Nuova Restituzione Cliente
@@ -1044,9 +1100,11 @@ it:
     new_zone: Nuova Zona
     next: Prossimo
     no_actions_added: Nessuna azione aggiunta
+    no_images_found: Nessuna immagine
     no_payment_found: Nessun pagamento trovato
     no_pending_payments: Nessun pagamento pendente
     no_products_found: Nessun prodotto trovato
+    no_resource: Nessuna risorsa
     no_resource_found: Nessun %{resource} trovato
     no_results: Nessun risultato
     no_returns_found: Nessuna restituazione trovata
@@ -1381,6 +1439,7 @@ it:
         thanks: Grazie per il tuo ordine.
         track_information: 'Informazione Tracciamento: %{tracking}'
         track_link: 'Link Tracciamento: %{url}'
+    shipment_number: Numero di spedizione
     shipment_state: Stato Spedizione
     shipment_states:
       backorder: arretrato
@@ -1412,6 +1471,7 @@ it:
     show_deleted: Mostra Eliminati
     show_only_complete_orders: Visualizza solo ordini completi
     show_only_considered_risky: Visualizza solo ordini a rischio
+    show_only_open_transfers: Vedi solo trasferimenti aperti
     show_rate_in_label: Mostra percentuale nell'etichetta
     sku: SKU
     skus: SKU
@@ -1543,6 +1603,7 @@ it:
     unable_to_connect_to_gateway: Impossibile connettersi al gateway.
     unable_to_create_reimbursements: Impossibile creare rimborsi perché ci sono articoli in attesa di intervento manuale.
     under_price: Inferiore di %{price}
+    unfinalize_all_adjustments: Annulla la registrazione
     unlock: Sblocca
     unrecognized_card_type: Carda di credito non riconosciuta
     unshippable_items: Impossibile spedire gli articoli
@@ -1569,6 +1630,8 @@ it:
     value: Valore
     variant: Variante
     variant_placeholder: Scegli una variante
+    variant_properties: Proprietà variante
+    variant_search_placeholder: Cerca variante
     variants: Varianti
     version: Versione
     void: Annullato
@@ -1590,6 +1653,7 @@ it:
       canceled: annullato
       returned: restituito
       shipped: spedito
+      on_hand: disponibile
     no_resource_found_link: Aggiungine Uno
     number: Numero
     store_credit:
